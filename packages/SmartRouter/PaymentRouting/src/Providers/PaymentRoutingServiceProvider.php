@@ -21,6 +21,8 @@ class PaymentRoutingServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        \Log::info('PaymentRoutingServiceProvider boot method executed');
+
         // Publishing the config file
         $this->publishes([
             __DIR__.'/../../config/payment.php' => config_path('payment.php'),

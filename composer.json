@@ -27,7 +27,8 @@
     },
     "autoload": {
         "psr-4": {
-            "SmartRouter\\PaymentRouting\\": "src/"
+            "App\\": "app/",
+            "SmartRouter\\PaymentRouting\\": "packages/SmartRouter/PaymentRouting/src/"
         }
     },
     "autoload-dev": {

@@ -2,7 +2,7 @@
 
 return [
     'routing' => [
-        'priority' => ['cost', 'reliability'], // Define your priority criteria here
+        'priority' => ['cost', 'reliability'],
     ],
     'gateways' => [
         'paystack' => [

@@ -13,8 +13,8 @@ class CreateGatewaysTable extends Migration
             $table->string('key')->unique();
             $table->json('details');
 
-            $table->string('name');
-            $table->boolean('active')->default(true);
+            // $table->string('name');
+            // $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }
