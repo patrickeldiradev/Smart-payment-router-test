@@ -19,8 +19,8 @@ class PaymentGateway
 
     protected function loadGateways()
     {
-        $this->gateways = DB::table('gateways')->pluck('details', 'key')->map(function ($item) {
-            return json_decode($item, true);
+        $this->gateways = DB::table('gateways')->get()->mapWithKeys(function ($item) {
+            return [$item->key => array_merge(['key' => $item->key], json_decode($item->details, true))];
         })->toArray();
     }
 
